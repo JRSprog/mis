@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>try1</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div id="mySidebar" class="sidebar">
+      <img src="blogo.png" style="width: 40%; margin-left: 25%; background-color: rgba(0,0,0,0);"><br><br>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="background: none; text-align: right; font-size: 30px;color: white; font-weight: bold;">x</a>
+        <br>
+        <p style="font-size: 13px; margin-left: 15px; color: blue; font-weight: bold; background-color: rgba(0,0,0,0);">WALLET AND PAYMENTS
+          <p style="font-size: 12px; margin-left: 15px; color: grey; margin-top: -7px; font-weight: bold; background-color: rgba(0,0,0,0);">Billing and Wallet</p></p>
+        <button class="dropdown-btn">MIS
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container" style="background: none;">
+          <a href="#" style="font-size: 15px; color: whitesmoke; margin-left: 5px;">Account Statement</a>
+          <a href="fees.html" style="font-size: 15px; color: whitesmoke; margin-left: 5px;">Outgoing Fees Report</a>
+          <a href="" style="font-size: 15px; color: whitesmoke; margin-left: 5px;">Payment</a><br><br>
+        </div>
+        <script>
+          /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+          var dropdown = document.getElementsByClassName("dropdown-btn");
+          var i;
+          
+          for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var dropdownContent = this.nextElementSibling;
+              if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+              } else {
+                dropdownContent.style.display = "block";
+              }
+            });
+          }
+          </script>
+
+        <a href="#">Enrollment</a>
+        <a href="#">Regestrar</a>
+        <a href="#">Financial</a>
+    </div>
+<div id="main">
+  <button href="javascript:void(0)" class="openbtn" onclick="openNav()">☰</button> 
+     <div type="container" style="margin-top: 3px; background-color: white; width: 1490px; font-size: 35px; padding: 10px; margin-left: -23px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1); border: none; font-weight: bold;"><p style="font-size: 15px; color: blue; margin-top: 25px;">&nbsp;Dashboard</p>Announcements<br><br></bdir></div>
+      
+      <div class="container-1" style="height: 100vh;
+      width: 1400px;
+      background-color: white;
+      border-radius: 25px;
+      box-shadow: 0 4px 8px rgba(0.3,0.3,0.3,0.4);
+      margin-left: 15px; border-top: rgba(0,0,0,0.1); align-items: center; margin-top: 100px;"
+      >
+      <p style="font-size: 18px; font-weight: bold; margin-left: 35px; margin-top: 25px;"><br>Announcements</p>
+       <img src="1p.png" style="height: 300px; width: 1350px; margin-left: 25px; margin-top: 60px;">
+
+      </div>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "280px";
+  document.getElementById("main").style.marginLeft = "280px";
+}
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+</body>
+</html> 
+
+</body>
+</html>
