@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style2.css">
+    <title>try1</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="background: none; text-align: right; font-size: 30px;color: white; font-weight: bold;">x</a>
+        <br><br>
+        <p style="font-size: 13px; margin-left: 15px; color: blue; font-weight: bold; background-color: rgba(0,0,0,0);">WALLET AND PAYMENTS
+          <p style="font-size: 12px; margin-left: 15px; color: grey; margin-top: -7px; font-weight: bold; background-color: rgba(0,0,0,0);">Billing and Wallet</p></p>
+        <button class="dropdown-btn">MIS
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container" style="background: none;">
+          <a href="#" style="font-size: 15px; color: whitesmoke; margin-left: 5px;">Account Statement</a>
+          <a href="fees.html" style="font-size: 15px; color: whitesmoke; margin-left: 5px;">Outgoing Fees Report</a>
+          <a href="" style="font-size: 15px; color: whitesmoke; margin-left: 5px;">Payment</a><br><br>
+        </div>
+        <script>
+          /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+          var dropdown = document.getElementsByClassName("dropdown-btn");
+          var i;
+          
+          for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var dropdownContent = this.nextElementSibling;
+              if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+              } else {
+                dropdownContent.style.display = "block";
+              }
+            });
+          }
+          </script>
+
+        <a href="#">Enrollment</a>
+        <a href="#">Regestrar</a>
+        <a href="#">Financial</a>
+    </div>
+<div id="main">
+  <button href="javascript:void(0)" class="openbtn" onclick="openNav()">☰</button> 
+     <div type="container" style="margin-top: 3px; background-color: white; width: 1490px; font-size: 35px; padding: 15px; margin-left: -23px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1); border: none; font-weight: bold;"><p style="font-size: 13px; color: blue; margin-top: -1px;">
+      &nbsp;Dashboard&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Outgoing Fees Report</p>
+    </div>
+    <div type="container-2" class="container-2" style="background-color: white;
+    margin-left: 15px;
+    margin-top: 70px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    width: 600px; text-align: center;"><br> 
+    <label style="font-size: 25px; font-weight: bold;">Transaction History</label><br><br><br>
+      <label for="year" style="font-size: 15px; font-weight: bold; margin-left: -270px;">Select Year Level :</label>
+  <select name="year" id="year" style="width: 150px; padding: 10px; border-radius: 5px;">
+    <option value="">Year level</option>
+    <option value="1st">1st Year</option>
+    <option value="2nd">2nd Year</option>
+    <option value="3rd">3rd Year</option>
+    <option value="4th">4th Year</option>
+  </select>
+  <br><br><br>
+  <a href="dtable.html"><button style="width: 250px; padding: 8px; margin-bottom: 15px; background-color: blue; font-size: 13px;
+  font-weight: bold; color: white; border: none; border-radius: 7px;">View</button></a>
+    </div><br><br><br><br>
+    <div style="
+    width: 1200px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 4p 8px 0 rgba(0, 0, 0, 0.3);
+    margin-left: 15px;
+    padding: 50px;
+    ">
+       <p style="font-size: 25px; font-weight: bold; text-align: center; margin-top: -15px;">Ongoing fees Report</p>
+       <style>
+        table {
+        width: 90%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        margin-left: 53px;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    @media (max-width: 600px) {
+        table, thead, tbody, th, td, tr {
+            display: block;
+        }
+        th {
+            display: none;
+        }
+        tr {
+            margin-bottom: 15px;
+        }
+        td {
+            text-align: right;
+            position: relative;
+            padding-left: 50%;
+        }
+        td::before {
+            content: attr(data-label);
+            position: absolute;
+            left: 0;
+            width: 50%;
+            padding-left: 10px;
+            text-align: left;
+            font-weight: bold;
+        }
+    }
+       </style>
+       <table>
+        <thead>
+          <tr>
+              <th>Details</th>
+              <th>Amount</th>
+              <th>Dealine</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td data-label="Name">Miscelennious</td>
+              <td data-label="Age">10M</td>
+              <td data-label="Country">....</td>
+          </tr>
+          <tr>
+              <td data-label="Name">Research Forum</td>
+              <td data-label="Age">2500</td>
+              <td data-label="Country">9-5-2034</td>
+          </tr>
+          <tr>
+              <td data-label="Name">Stage play</td>
+              <td data-label="Age">1000</td>
+              <td data-label="Country">9-20-2024</td>
+          </tr>
+      </tbody>
+       </table>
+
+    </div>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "280px";
+  document.getElementById("main").style.marginLeft = "280px";
+}
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+</body>
+</html> 
+
+</body>
+</html>
